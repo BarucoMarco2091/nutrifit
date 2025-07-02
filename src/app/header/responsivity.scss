@@ -1,1 +1,59 @@
 @import '../../variables.scss';
+
+@media (width >=1024px) {
+    header {
+
+        img {
+            position: relative;
+        }
+
+        .hero {
+            position: absolute;
+            top: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            width: 100%;
+
+            h1,
+            p {
+                color: $white;
+                text-align: center;
+            }
+
+            .hero-btn {
+                margin-top: 5dvh;
+
+                .start-btn,
+                .explore-btn {
+                    border: none;
+                    border-radius: 2dvh;
+                    height: 5dvh;
+                    width: 25dvh;
+                    margin-right: 2dvh;
+                    color: $white;
+                }
+
+                .start-btn {
+                    background-color: $green-700;
+                    transition: background-color .9s;
+                }
+
+                .start-btn:hover {
+                    background-color: $red-600;
+                }
+
+                .explore-btn {
+                    background-color: $blue-700;
+                    transition: background-color .9s;
+                }
+
+                .explore-btn:hover {
+                    background-color: $red-600;
+                }
+            }
+        }
+    }
+}
